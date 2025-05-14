@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="tv_timer" type="id">id/tv_timer</item>
-    <item name="tv_sum" type="id">id/tv_sum</item>
-    <item name="tv_left_number" type="id">id/tv_left_number</item>
-    <item name="tv_option_1" type="id">id/tv_option_1</item>
-    <item name="tv_question" type="id">id/tv_question</item>
-    <item name="tv_option_4" type="id">id/tv_option_4</item>
-    <item name="tv_option_5" type="id">id/tv_option_5</item>
-    <item name="tv_option_2" type="id">id/tv_option_2</item>
-    <item name="tv_option_6" type="id">id/tv_option_6</item>
-    <item name="tv_option_3" type="id">id/tv_option_3</item>
-    <item name="tv_answers_progress" type="id">id/tv_answers_progress</item>
-    <item name="progress_bar" type="id">id/progress_bar</item>
+    <item name="tv_timer" type="id">@+id/tv_timer</item>
+    <item name="tv_sum" type="id">@+id/tv_sum</item>
+    <item name="tv_left_number" type="id">@+id/tv_left_number</item>
+    <item name="tv_option_1" type="id">@+id/tv_option_1</item>
+    <item name="tv_question" type="id">@+id/tv_question</item>
+    <item name="tv_option_4" type="id">@+id/tv_option_4</item>
+    <item name="tv_option_5" type="id">@+id/tv_option_5</item>
+    <item name="tv_option_2" type="id">@+id/tv_option_2</item>
+    <item name="tv_option_6" type="id">@+id/tv_option_6</item>
+    <item name="tv_option_3" type="id">@+id/tv_option_3</item>
+    <item name="tv_answers_progress" type="id">@+id/tv_answers_progress</item>
+    <item name="progress_bar" type="id">@+id/progress_bar</item>
 </resources>
