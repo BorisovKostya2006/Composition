@@ -7,9 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.composition.R
 import com.example.composition.databinding.FragmentGameFinishBinding
+import com.example.composition.domain.entity.GameResult
 import java.lang.RuntimeException
 
-
+lateinit var gameResult: GameResult
 class FragmentGameFinish : Fragment() {
 
     var _binding : FragmentGameFinishBinding? = null
@@ -36,6 +37,19 @@ class FragmentGameFinish : Fragment() {
                 .replace(R.id.main_container, ChooseLevelFragment())
                 .commit()
            
+        }
+    }
+    private fun parseArguments(){
+        gameResult = requireArguments().getParcelable<GameResult>(KEY_GAME_RESULT) as GameResult
+    }
+    companion object{
+        const val KEY_GAME_RESULT = "GameReesult"
+        fun newInstance(gameResult: GameResult) : FragmentGameFinish{
+            return FragmentGameFinish().apply {
+                arguments = Bundle().apply {
+                    putParcelable(KEY_GAME_RESULT,gameResult)
+                }
+            }
         }
     }
 
