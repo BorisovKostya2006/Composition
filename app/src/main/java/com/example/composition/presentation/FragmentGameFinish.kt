@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.composition.R
 import com.example.composition.databinding.FragmentGameFinishBinding
 import java.lang.RuntimeException
@@ -31,10 +32,10 @@ class FragmentGameFinish : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.buttonRetry.setOnClickListener {
-            requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.main_container, ChooseLevelFragment())
-                .commit()
-           
+
+            findNavController().navigate(R.id.action_fragmentGameFinish_to_chooseLevelFragment)
+
+
         }
     }
 

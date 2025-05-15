@@ -25,7 +25,7 @@ class GameViewModel : ViewModel() {
 
     fun startGame(level: Level){
         this.level = level
-        this.gameSettings = GetGameSettingsUseCase(level)
+//        this.gameSettings = GetGameSettingsUseCase(level)
     }
     private fun Timer(){
         val timer = object : CountDownTimer(
